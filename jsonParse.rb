@@ -13,17 +13,17 @@ parsed["Instances"].each do |inst|
   tags=Hash.new
   is_running=false
      
-  inst.each do |prop|
+  inst.each do |key, value|
 #    p prop
 
-    case prop[0]
+    case key
       when "PrivateIpAddress"
 #        p prop[1]
-        ip = prop[1]
+        ip = value
       when "State"
-        is_running = prop[1]["Name"]=="running"
+        is_running = value["Name"]=="running"
       when "Tags"
-        prop[1].each do |tag|
+        value.each do |tag|
 #          p tag["Value"] if tag["Key"] == "Name"
           tags[tag["Key"]]=tag["Value"]
        end
