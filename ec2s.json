@@ -100,13 +100,13 @@
                         "Key": "Name"
                     },
                     {
+                        "Value": "uat",
+                        "Key": "Env"
+                    },
+                    {
                         "Value": "1234",
                         "Key": "cost.centre"
-                      },
-                    {
-                        "Value": "Jyoti Bhanot",
-                        "Key": "Owner"
-                      }
+                    }
                 ],
                 "AmiLaunchIndex": 0
             }

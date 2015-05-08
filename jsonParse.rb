@@ -12,29 +12,26 @@ parsed["Instances"].each do |inst|
   ip=nil
   tags=Hash.new
   is_running=false
+  state=nil
      
   inst.each do |key, value|
-#    p prop
 
     case key
       when "PrivateIpAddress"
-#        p prop[1]
         ip = value
       when "State"
         is_running = value["Name"]=="running"
+        state = value["Name"]
       when "Tags"
         value.each do |tag|
-#          p tag["Value"] if tag["Key"] == "Name"
           tags[tag["Key"]]=tag["Value"]
        end
     end
   end
 
-#  p 'Machine '+ ip+ ' is running' if is_running
-#  p tags
-  ret1 = [tags["Name"], ip] if is_running and tags["cost.centre"] == "1234"
+  ret1 = [tags["Name"], ip, state, tags["Env"]] 
   p ret1
-  ret2 = {:name => tags["Name"], :ip => ip, :cost_centre=> tags["cost.centre"]}
+  ret2 = {:name => tags["Name"], :ip => ip, :state => state, :env=>tags["Env"]}
   p ret2
 end
 
