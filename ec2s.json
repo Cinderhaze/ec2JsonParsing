@@ -1,0 +1,114 @@
+{
+        "OwnerId": "121456789127",
+        "ReservationId": "r-48465168",
+        "Groups": [],
+        "Instances": [
+            {
+                "Monitoring": {
+                    "State": "disabled"
+                },
+                "PublicDnsName": null,
+                "RootDeviceType": "ebs",
+                "State": {
+                    "Code": 16,
+                    "Name": "running"
+                },
+                "EbsOptimized": false,
+                "LaunchTime": "2014-03-19T09:16:56.000Z",
+                "PrivateIpAddress": "10.250.171.248",
+                "ProductCodes": [
+                    {
+                        "ProductCodeId": "aacglxeowvn5hy8sznltowyqe",
+                        "ProductCodeType": "marketplace"
+                    }
+                ],
+                "VpcId": "vpc-86bab0e4",
+                "StateTransitionReason": null,
+                "InstanceId": "i-1234576",
+                "ImageId": "ami-b7f6c5de",
+                "PrivateDnsName": "ip-10-120-134-248.ec2.internal",
+                "KeyName": "Test_Virginia",
+                "SecurityGroups": [
+                    {
+                        "GroupName": "Test",
+                        "GroupId": "sg-12345b"
+                    }
+                ],
+                "ClientToken": "VYeFw1395220615808",
+                "SubnetId": "subnet-12345314",
+                "InstanceType": "t1.micro",
+                "NetworkInterfaces": [
+                    {
+                        "Status": "in-use",
+                        "SourceDestCheck": true,
+                        "VpcId": "vpc-123456e4",
+                        "Description": "Primary network interface",
+                        "NetworkInterfaceId": "eni-3619f31d",
+                        "PrivateIpAddresses": [
+                            {
+                                "Primary": true,
+                                "PrivateIpAddress": "10.120.134.248"
+                            }
+                        ],
+                        "Attachment": {
+                            "Status": "attached",
+                            "DeviceIndex": 0,
+                            "DeleteOnTermination": true,
+                            "AttachmentId": "eni-attach-9210dee8",
+                            "AttachTime": "2014-03-19T09:16:56.000Z"
+                        },
+                        "Groups": [
+                            {
+                                "GroupName": "Test",
+                                "GroupId": "sg-123456cb"
+                            }
+                        ],
+                        "SubnetId": "subnet-31236514",
+                        "OwnerId": "109030037527",
+                        "PrivateIpAddress": "10.120.134.248"
+                    }
+                ],
+                "SourceDestCheck": true,
+                "Placement": {
+                    "Tenancy": "default",
+                    "GroupName": null,
+                    "AvailabilityZone": "us-east-1c"
+                },
+                "Hypervisor": "xen",
+                "BlockDeviceMappings": [
+                    {
+                        "DeviceName": "/dev/sda",
+                        "Ebs": {
+                            "Status": "attached",
+                            "DeleteOnTermination": false,
+                            "VolumeId": "vol-37ff097b",
+                            "AttachTime": "2014-03-19T09:17:00.000Z"
+                        }
+                    }
+                ],
+                "Architecture": "x86_64",
+                "KernelId": "aki-88aa75e1",
+                "RootDeviceName": "/dev/sda1",
+                "VirtualizationType": "paravirtual",
+                "Tags": [
+                    {
+                        "Value": "Server for testing RDS feature in us-east-1c AZ",
+                        "Key": "Description"
+                    },
+                    {
+                        "Value": "RDS_Machine (us-east-1c)",
+                        "Key": "Name"
+                    },
+                    {
+                        "Value": "1234",
+                        "Key": "cost.centre"
+                      },
+                    {
+                        "Value": "Jyoti Bhanot",
+                        "Key": "Owner"
+                      }
+                ],
+                "AmiLaunchIndex": 0
+            }
+        ]
+    }
